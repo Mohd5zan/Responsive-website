@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+#main{
+    width:100%;
+    min-height:100vh;
+}
+#top{
+    width:100%;
+    min-height:60vh;
+    background-size:cover;
+    background-position: 50% 50%;
+    background-image: url(https://images.unsplash.com/photo-1542480118439-cbba7870f6f7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8fA%3D%3D);
+}
+#overlay{
+    position:relative;
+    width:100%;
+    min-height:inherit;
+    background-color: rgba(0, 0, 0, 0.148);
+}
+#text{
+    display:flex;
+    position:absolute;
+    bottom: 20px;
+    width:100%;
+    /* height:120px; */
+    padding: 0 10vw;
+    color:#fff;
+    justify-content: space-between;
+    align-items: center;
+}
+#textright{
+    display: flex;
+    width:60%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#textright p{
+font-size: 12px;
+}
+#bottom{
+    display: flex;
+    width:100%;
+    min-height:20vh;
+    background-color: blue;
+}
+#text h1{
+    font-size: 6vw;
+    font-weight: 500;
+}
+#b1{
+    padding: 30px;
+    width:25%;
+    min-height:inherit;
+    background-color:white;
+}
+#b1 p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+#b2{
+    width:25%;
+    min-height:inherit;
+    background-position: 50% 60%;
+    background-size: cover;
+    background-image: url(https://plus.unsplash.com/premium_photo-1674086970773-726e445f5802?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZnVsbCUyMGhkJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww);
+}
+#b3{
+    width:20%;
+    min-height:inherit;
+    background-color:pink;
+}
+#b3t{
+    width:100%;
+    min-height:20vh;
+    background-color:blanchedalmond;
+    padding: 9px;
+}
+#b3t p{
+    margin-top: 10px;
+    font-size: 12px;
+}
+#b3b{
+    width:100%;
+    min-height:20vh;
+    /* background-position: 30% 40%; */
+    background-size: cover;
+    background-image: url(https://plus.unsplash.com/premium_photo-1668633086435-a16be494a922?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGZ1bGwlMjBoZCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D);
+}
+
+#b4{
+    width:30%;
+    min-height:inherit;
+    background-color:#444;
+    color: whitesmoke;
+    padding: 30px;
+}
+.notf{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.notf #photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: red;
+}
+.notf p{
+    width:90%;
+    font-size: 12px;
+}
+@media(max-width:500px){
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #text h1{
+        font-size: 10vw;
+    }
+    #overlay #text #textright{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #overlay #text #textright p{
+        width: initial;
+        margin-top: 20px;
+    }
+    #overlay #text #textright #icons{
+        margin-top: 30px;
+    }
+    #bottom{
+        flex-direction: column;
+        min-height: 20vh;
+    }
+    #b1{
+       width:100%; 
+    }
+    #b2{
+       width:100%; 
+    }
+    #b3{
+        flex-direction: column;
+       width:100%; 
+    }
+    #b3b{
+        min-height: 50vh;
+    }
+    #b4{
+       width:100%; 
+    }
+}
